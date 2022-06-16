@@ -2,19 +2,28 @@
 
 // ჩაანაცვლეთ If-Else switch statement-ით
 
-switch (val) {
-    case 1:
-        console.log(1);
-        break;
+if (color == "Red") {
+    message = "R";
+} else if (color == "Yellow") {
+    message = "Y";
+} else if (color == "") {
+    message = "none";
+} else {
+    message = undefined;
+}
 
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-        console.log("+");
+switch (color) {
+    case "Red":
+        message = "R";
+        break;
+    case "Yellow":
+        message = "Y";
+        break;
+    case "":
+        message = "none";
         break;
 
     default:
-        console.log(0);
+        message = undefined;
 }
-//  ვერ გავიგე ეს
+// მგონ ისწ0ორად მაქვს
